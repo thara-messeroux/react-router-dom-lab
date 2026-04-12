@@ -153,3 +153,21 @@ This lab focuses on learning how to build multi-page experiences in React using 
 
 ---
 
+## Step 8 🦄 New Mailbox Form
+
+- Created controlled form with `useState`
+- Handled input changes with `handleChange`
+- Submitted form using `handleSubmit`
+- Connected form to `addBox` function
+- Reset form after submission
+
+### Why it matters
+- Allows users to create new data
+- Makes the app interactive and dynamic
+
+### Engineering principle used
+- Controlled components → React controls form inputs
+- Event handling → responding to user actions
+
+---
+
