@@ -8,11 +8,16 @@ import Home from "./pages/Home";
 import MailboxList from "./pages/MailboxList";
 import MailboxDetails from "./pages/MailboxDetails";
 import NewMailbox from "./pages/NewMailbox";
+// Add this import at the top
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
     // BrowserRouter = enables routing in the app (like turning on navigation)
     <BrowserRouter>
+      {/* NavBar = the navigation bar that will be shown on all pages */}
+      <NavBar />
+      
       {/* Routes = container that holds all route rules */}
       <Routes>
         

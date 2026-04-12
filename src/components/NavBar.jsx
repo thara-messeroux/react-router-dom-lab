@@ -1,9 +1,27 @@
-import React from 'react'
+// Import Link so we can navigate between pages without reloading
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <div>NavBar</div>
-  )
-}
+    <nav>
+      <ul>
+        {/* Link to Home page */}
+        <li>
+          <Link to="/">Home</Link>
+        </li>
 
-export default NavBar
+        {/* Link to Mailbox list page */}
+        <li>
+          <Link to="/mailboxes">Mailboxes</Link>
+        </li>
+
+        {/* Link to create new mailbox */}
+        <li>
+          <Link to="/new-mailbox">New Mailbox</Link>
+        </li>
+      </ul>
+    </nav>
+  );
+};
+
+export default NavBar;
