@@ -1,17 +1,35 @@
-# React + Vite
+# React Router DOM Lab 📬
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Intro
 
-Currently, two official plugins are available:
+This project is a simple React application that simulates a post office system called "Reactville."
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Users can:
+- View a list of mailboxes
+- Click on a mailbox to see its details
+- Create new mailboxes through a form
 
-## React Compiler
+This lab focuses on learning how to build multi-page experiences in React using `react-router-dom`, without reloading the page.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Concepts covered
+- React Router (client-side routing)
+- Navigation with `Link`
+- Dynamic routes using URL parameters
+- State management with `useState`
+- Component-based architecture
 
-## Expanding the ESLint configuration
+## Step 1 🐣 Project Setup
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# react-router-dom-lab
+- Created the React app with Vite
+- Named the project `react-router-dom-lab`
+- Chose `React` + `JavaScript`
+- Installed project dependencies with `npm i`
+- Installed `react-router-dom`
+
+### Why it matters
+- This creates the base app we will build on
+- `react-router-dom` gives us navigation between pages without full reloads
+
+### Engineering principle used
+- Project setup → preparing the app environment
+- Dependency management → installing libraries the app needs
