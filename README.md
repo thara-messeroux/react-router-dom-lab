@@ -136,4 +136,20 @@ This lab focuses on learning how to build multi-page experiences in React using 
 - Props → passing data between components
 
 ---
+## Step 7 🐸 Mailbox Details (Dynamic Routing)
+
+- Used `useParams` to read mailbox ID from URL
+- Found the correct mailbox using `.find()`
+- Displayed mailbox details (owner + size)
+- Added fallback for "Mailbox Not Found"
+
+### Why it matters
+- Enables dynamic pages based on URL
+- Allows each mailbox to have its own detail view
+
+### Engineering principle used
+- Dynamic routing → using URL parameters
+- Data lookup → finding specific data from state
+
+---
 
