@@ -187,3 +187,17 @@ This lab focuses on learning how to build multi-page experiences in React using 
 
 ---
 
+## Step 10 🐢 Redirect after form submit
+
+- Added `useNavigate` to NewMailbox page
+- Redirected user to `/mailboxes` after form submission
+
+### Why it matters
+- Matches expected user flow
+- Improves user experience
+
+### Engineering principle used
+- Programmatic navigation → navigating using code
+
+---
+

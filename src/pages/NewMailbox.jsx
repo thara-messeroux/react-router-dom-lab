@@ -1,6 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 const NewMailbox = (props) => {
+  // Get navigate function to redirect after form submission
+  const navigate = useNavigate();
+
   // Store form input values
   const [formData, setFormData] = useState({
     boxOwner: "",
@@ -27,6 +31,9 @@ const NewMailbox = (props) => {
       boxOwner: "",
       boxSize: "Small",
     });
+
+    // Redirect user to Mailboxes page
+    navigate("/mailboxes");
   };
 
   return (
