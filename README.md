@@ -170,4 +170,19 @@ This lab focuses on learning how to build multi-page experiences in React using 
 - Event handling → responding to user actions
 
 ---
+## Step 9 🐝 Clickable Mailbox List
+
+- Updated `MailboxList.jsx` to use real `mailboxes` data from props
+- Wrapped each mailbox in a `Link`
+- Connected each mailbox box to its own details route
+
+### Why it matters
+- Lets users open a mailbox details page
+- Replaces fake placeholder mailbox data with real app state
+
+### Engineering principle used
+- Dynamic routing → each mailbox gets its own URL
+- Props → passing mailbox data from `App` into `MailboxList`
+
+---
 

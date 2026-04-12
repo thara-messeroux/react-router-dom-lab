@@ -1,22 +1,24 @@
-// src / pages / MailboxList.jsx;
+// Import Link so each mailbox can open its details page
+import { Link } from "react-router-dom";
 
-import React from "react";
-
-const MailboxList = () => {
-  // Temporary fake mailbox numbers so we can build the page shape first
-  const mailboxIds = [1, 2, 3];
-
+const MailboxList = (props) => {
   return (
     <main>
-      {/* Page title so users know where they are */}
+      {/* Page title */}
       <h1>Mailbox List</h1>
 
-      {/* This section holds all mailbox boxes */}
-      {mailboxIds.map((mailboxId) => (
-        <div key={mailboxId} className="mail-box">
-          {/* For now, just show the mailbox number */}
-          <h2>Mailbox {mailboxId}</h2>
-        </div>
+      {/* Loop through all mailbox objects from state */}
+      {props.mailboxes.map((mailbox) => (
+        <Link
+          key={mailbox._id}
+          to={`/mailboxes/${mailbox._id}`}
+          style={{ textDecoration: "none", color: "inherit" }}
+        >
+          <div className="mail-box">
+            {/* Show the mailbox number */}
+            <h2>Mailbox {mailbox._id}</h2>
+          </div>
+        </Link>
       ))}
     </main>
   );
