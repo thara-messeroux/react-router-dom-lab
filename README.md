@@ -18,6 +18,8 @@ This lab focuses on learning how to build multi-page experiences in React using 
 - State management with `useState`
 - Component-based architecture
 
+---
+
 ## Step 1 🐣 Project Setup
 
 - Created the React app with Vite
@@ -33,3 +35,76 @@ This lab focuses on learning how to build multi-page experiences in React using 
 ### Engineering principle used
 - Project setup → preparing the app environment
 - Dependency management → installing libraries the app needs
+
+---
+
+## Step 2 🐢 Component Structure
+
+- Created folders: `components/` and `pages/`
+- Added core files for navigation and pages
+- Added placeholder content in each file
+
+### Why it matters
+- Organizes the app into clear, reusable pieces
+- Makes the code easier to scale and maintain
+
+### Engineering principle used
+- Component-based architecture → breaking UI into small reusable parts
+
+### Small styling setup
+- Added base styles in `index.css`
+- Styled navigation, forms, and mailbox cards
+
+### Why it matters
+- Gives the app readable structure early
+- Makes testing easier as pages start to render
+
+---
+
+## Step 3 🐬 Routing Setup
+
+- Added React Router to `App.jsx`
+- Wrapped app with `BrowserRouter`
+- Created routes for:
+  - Home (`/`)
+  - Mailbox List (`/mailboxes`)
+  - New Mailbox (`/new-mailbox`)
+  - Mailbox Details (`/mailboxes/:mailboxId`)
+
+### Why it matters
+- Enables navigation between pages without reloading
+- Allows dynamic URLs for individual mailbox pages
+
+### Engineering principle used
+- Client-side routing → controlling navigation inside React
+
+---
+
+## Step 4 🦊 Navigation with Links
+
+- Created `NavBar` component
+- Added navigation links using `Link`
+- Connected NavBar to `App.jsx`
+
+### Why it matters
+- Allows users to move between pages
+- Creates a real app navigation experience
+
+### Engineering principle used
+- Client-side navigation → using `Link` instead of page reloads
+
+---
+## Debug Fix 🛠️ Missing Package Error
+
+- Found that `react-router-dom` was not being resolved
+- Installed `react-router-dom` in the correct project folder
+- Restarted the dev server
+
+### Why it matters
+- React can only import packages that exist in the current project
+- Restarting the server helps Vite recognize new installs
+
+### Engineering principle used
+- Dependency management → making sure required libraries are installed correctly
+
+---
