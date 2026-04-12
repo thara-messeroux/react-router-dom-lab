@@ -94,11 +94,6 @@ This lab focuses on learning how to build multi-page experiences in React using 
 - Client-side navigation → using `Link` instead of page reloads
 
 ---
-## Debug Fix 🛠️ Missing Package Error
-
-- Found that `react-router-dom` was not being resolved
-- Installed `react-router-dom` in the correct project folder
-- Restarted the dev server
 
 ### Why it matters
 - React can only import packages that exist in the current project
@@ -108,3 +103,21 @@ This lab focuses on learning how to build multi-page experiences in React using 
 - Dependency management → making sure required libraries are installed correctly
 
 ---
+
+## Step 5 🐼 Mailbox List Page Structure
+
+- Replaced the placeholder Mailbox List page
+- Added a page heading
+- Rendered temporary mailbox boxes using `.map()`
+- Applied the `.mail-box` CSS class to each mailbox
+
+### Why it matters
+- Builds the visual structure for the mailbox list
+- Prepares the page for real mailbox data in the next step
+
+### Engineering principle used
+- Rendering lists → showing repeated UI from array data
+- Separation of concerns → building UI structure before real state
+
+---
+
