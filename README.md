@@ -120,4 +120,20 @@ This lab focuses on learning how to build multi-page experiences in React using 
 - Separation of concerns → building UI structure before real state
 
 ---
+## Step 6 🦁 State + Data Management
+
+- Added `useState` to store mailboxes
+- Created `addBox` function to add new mailboxes
+- Generated unique `_id` for each mailbox
+- Passed data and functions to components via props
+
+### Why it matters
+- Allows the app to store and update real data
+- Makes the app dynamic instead of static
+
+### Engineering principle used
+- State management → storing and updating data in React
+- Props → passing data between components
+
+---
 

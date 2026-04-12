@@ -1,38 +1,54 @@
-// src/App.jsx
+// Import React state
+import { useState } from "react";
 
-// Import routing tools from react-router-dom
+// Import routing tools
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-// Import all pages we created
+// Import components
+import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import MailboxList from "./pages/MailboxList";
 import MailboxDetails from "./pages/MailboxDetails";
 import NewMailbox from "./pages/NewMailbox";
-// Add this import at the top
-import NavBar from "./components/NavBar";
 
 function App() {
+  // mailboxes = list of mailbox objects (this is our app's data)
+  const [mailboxes, setMailboxes] = useState([]);
+
+  // Function to add a new mailbox
+  const addBox = (newBoxData) => {
+    // Create a new mailbox object
+    const newMailbox = {
+      ...newBoxData, // includes boxOwner and boxSize
+      _id: mailboxes.length + 1, // auto-increment id
+    };
+
+    // Update state with the new mailbox added
+    setMailboxes([...mailboxes, newMailbox]);
+  };
+
   return (
-    // BrowserRouter = enables routing in the app (like turning on navigation)
     <BrowserRouter>
-      {/* NavBar = the navigation bar that will be shown on all pages */}
+      {/* NavBar always visible */}
       <NavBar />
-      
-      {/* Routes = container that holds all route rules */}
+
       <Routes>
-        
-        {/* When user goes to "/" → show Home page */}
         <Route path="/" element={<Home />} />
 
-        {/* When user goes to "/mailboxes" → show list page */}
-        <Route path="/mailboxes" element={<MailboxList />} />
+        {/* Pass mailboxes data into MailboxList */}
+        <Route
+          path="/mailboxes"
+          element={<MailboxList mailboxes={mailboxes} />}
+        />
 
-        {/* When user goes to "/new-mailbox" → show form page */}
-        <Route path="/new-mailbox" element={<NewMailbox />} />
+        {/* Pass addBox function into NewMailbox */}
+        <Route path="/new-mailbox" element={<NewMailbox addBox={addBox} />} />
 
-        {/* When user goes to "/mailboxes/ANY_ID" → show details page */}
-        <Route path="/mailboxes/:mailboxId" element={<MailboxDetails />} />
-
+        {/* Pass mailboxes into details page */}
+        <Route
+          path="/mailboxes/:mailboxId"
+          element={<MailboxDetails mailboxes={mailboxes} />}
+        />
       </Routes>
     </BrowserRouter>
   );
