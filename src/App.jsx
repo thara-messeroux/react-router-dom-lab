@@ -56,7 +56,7 @@ function App() {
         {/* Pass mailboxes into details page */}
         <Route
           path="/mailboxes/:mailboxId"
-          element={<MailboxDetails mailboxes={mailboxes} />}
+          element={<MailboxDetails mailboxes={mailboxes} letters={letters} />}
         />
 
         {/* Pass mailboxes and addLetter into the letter form */}

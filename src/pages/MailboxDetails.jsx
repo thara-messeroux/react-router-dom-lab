@@ -23,6 +23,20 @@ const MailboxDetails = (props) => {
       {/* Show mailbox details */}
       <p>Owner: {selectedMailbox.boxOwner}</p>
       <p>Size: {selectedMailbox.boxSize}</p>
+
+      {/* Letters section */}
+      <h2>Letters</h2>
+
+      {props.letters
+        .filter((letter) => Number(letter.mailboxId) === selectedBox._id)
+        .map((letter, index) => (
+          <div key={index}>
+            <p>
+              <strong>To:</strong> {letter.recipient}
+            </p>
+            <p>{letter.message}</p>
+          </div>
+        ))}
     </main>
   );
 };
