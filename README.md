@@ -201,3 +201,16 @@ This lab focuses on learning how to build multi-page experiences in React using 
 
 ---
 
+## Level Up Step 1 🐣 Letters State
+
+- Added `letters` state in App.jsx
+- Created `addLetter` function to store new letters
+
+### Why it matters
+- Allows the app to store messages sent by users
+
+### Engineering principle
+- State management → storing app data centrally
+
+---
+

@@ -27,6 +27,14 @@ function App() {
     setMailboxes([...mailboxes, newMailbox]);
   };
 
+  // Store all letters
+  const [letters, setLetters] = useState([]);
+
+  // Add a new letter
+  const addLetter = (newLetter) => {
+    setLetters([...letters, newLetter]);
+  };
+
   return (
     <BrowserRouter>
       {/* NavBar always visible */}
