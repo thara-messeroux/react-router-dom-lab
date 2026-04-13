@@ -214,3 +214,31 @@ This lab focuses on learning how to build multi-page experiences in React using 
 
 ---
 
+## Level Up Step 2 🐣 Connect Letter Form
+
+- Passed `addLetter` and `mailboxes` as props to LetterForm
+
+### Why it matters
+- Lets the form send data back to App state
+
+### Engineering principle
+- Props → passing data and functions between components
+
+---
+
+## Level Up Step 3 🐣 Letter Form Page
+
+- Created `LetterForm.jsx`
+- Built controlled form for letters
+- Added mailbox dropdown, recipient input, and message textarea
+- Redirected to mailbox details after submit
+
+### Why it matters
+- Allows users to send letters to specific mailboxes
+
+### Engineering principle
+- Controlled forms → managing user input with state
+- Dynamic data → using real mailboxes in dropdown
+
+---
+
