@@ -28,7 +28,7 @@ const MailboxDetails = (props) => {
       <h2>Letters</h2>
 
       {props.letters
-        .filter((letter) => Number(letter.mailboxId) === selectedBox._id)
+        .filter((letter) => Number(letter.mailboxId) === selectedMailbox._id)
         .map((letter, index) => (
           <div key={index}>
             <p>
