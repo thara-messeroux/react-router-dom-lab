@@ -10,7 +10,7 @@ import Home from "./pages/Home";
 import MailboxList from "./pages/MailboxList";
 import MailboxDetails from "./pages/MailboxDetails";
 import NewMailbox from "./pages/NewMailbox";
-import LetterForm from "./pages/LetterForm";
+import LetterForm from "./pages/LetterForm.jsx";
 
 function App() {
   // mailboxes = list of mailbox objects (this is our app's data)
