@@ -244,14 +244,15 @@ This lab focuses on learning how to build multi-page experiences in React using 
 
 ## Key Takeaways
 
-- Built a multi-page React app using `react-router-dom`
-- Used `Routes`, `Route`, and `Link` for client-side navigation
-- Created dynamic routes with URL parameters using `useParams`
-- Managed mailbox and letter data with `useState`
-- Built controlled forms for creating mailboxes and sending letters
-- Used props to pass data and functions between components
+- Built a multi-page React app with `react-router-dom`
+- Used `Routes`, `Route`, and `Link` for smooth navigation
+- Created dynamic routes with `useParams`
+- Used `useState` to store mailboxes and letters
+- Built controlled forms for mailbox creation and sending letters
+- Passed data and functions through props
 - Used `.map()` to render lists and `.filter()` to show mailbox-specific letters
 - Used `useNavigate` to redirect users after form submission
+- Practiced organizing code into reusable pages and components
 
 ---
 
